@@ -1,4 +1,4 @@
-package fr.dauphine.javaavance.td1;
+package td1;
 import java.lang.Math;
 
 public class Circle {

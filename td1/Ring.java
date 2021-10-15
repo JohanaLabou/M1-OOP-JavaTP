@@ -1,6 +1,4 @@
-package fr.dauphine.javaavance.td1;
-
-import java.util.Objects;
+package td1;
 
 public class Ring extends Circle {
     private int innerRadius;
