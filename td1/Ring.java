@@ -3,7 +3,6 @@ package td1;
 public class Ring extends Circle {
     private int innerRadius;
 
-
     public Ring(Point p, int radius, int innerRadius){
         super(p, radius);
         if (innerRadius >= getRadius()) {
