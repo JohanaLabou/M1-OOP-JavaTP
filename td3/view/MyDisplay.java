@@ -1,9 +1,13 @@
 package td3.view;
 
+import td3.model.Model;
+
 import javax.swing.*;
 import java.awt.*;
 
 public class MyDisplay extends JPanel {
+
+    Model m;
 
     public MyDisplay(){
         JFrame frame = new JFrame("Java Avance - Graphic Display");
@@ -13,6 +17,8 @@ public class MyDisplay extends JPanel {
         MyDisplay d = new MyDisplay();
         frame.add(d);
         frame.setVisible(true);
+
+        m = new Model();
     }
 
     public void drawing(){
@@ -22,7 +28,7 @@ public class MyDisplay extends JPanel {
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-        for (int i=0; i<getListOfCircles.size(); i++){
+        for (int i=0; i<m.getListOfCircles().size(); i++){
 
         }
     }

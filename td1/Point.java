@@ -1,5 +1,7 @@
 package td1;
 
+import java.util.Objects;
+
 public class Point {
 
     private int x;
@@ -30,6 +32,18 @@ public class Point {
         this.y = this.y + dy;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o instanceof Point){
+            Point p = (Point) o;
+            return (p.x == x && p.y == y);
+        }
+        return false;
+    }
 
-
+    @Override
+    public int hashCode() {
+        return x^Integer.rotateLeft(y, 16);
+    }
 }
